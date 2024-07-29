@@ -5,16 +5,21 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class user extends Model
+class graphiccard extends Model
 {
     use HasFactory;
 
     public $timestamps = false;
-    protected $table = "user";
+    protected $table = "graphiccard";
     protected $fillable = [
-        "id",
-        "username",
-        "password",
-        "accessToken",
+    "id",
+    "name",
+    "imageUrl",
+    "brandId",
+    "memorySize",
+    "memoryType",
+    "minimumPowerSupply",
+    "supportMultiGpu"
     ];
+
 }

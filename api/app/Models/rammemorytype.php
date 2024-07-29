@@ -5,16 +5,15 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class user extends Model
+class     rammemorytype
+ extends Model
 {
     use HasFactory;
 
     public $timestamps = false;
-    protected $table = "user";
+    protected $table = "rammemorytype";
     protected $fillable = [
-        "id",
-        "username",
-        "password",
-        "accessToken",
+   "id",
+    "name",
     ];
 }

@@ -5,16 +5,19 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class user extends Model
+class powersupply extends Model
 {
     use HasFactory;
 
     public $timestamps = false;
-    protected $table = "user";
+    protected $table = "powersupply";
     protected $fillable = [
-        "id",
-        "username",
-        "password",
-        "accessToken",
+      "id",
+    "name",
+    "imageUrl",
+    "brandId",
+    "potency",
+    "badge80Plus"
     ];
+
 }
