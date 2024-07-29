@@ -28,7 +28,7 @@ create table ramMemoryType (
     constraint primary key(id)
 );
 
-create table motherboard (
+create table machine (
 	id int auto_increment not null,
     name varchar(96) not null,
     imageUrl varchar(512) not null,
